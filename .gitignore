@@ -1,9 +1,9 @@
-/python/mieszkania_rynek_wtorny.txt
-/python/.idea/
+/scraper/mieszkania_rynek_wtorny.txt
+/scraper/.idea/
 /.idea/.gitignore
 /.idea/HouseHunter.iml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/vcs.xml
-/python/.idea/__pycache__
+/scraper/.idea/__pycache__

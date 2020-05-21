@@ -12,6 +12,7 @@ def read_page(link, filename):
     for url in urls:
         output = url.get('href')
         f.write(output + "\n")
+        #call page scraping here
 
     is_last = 1
     next_pages = soup.select('.page-step a')

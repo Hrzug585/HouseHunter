@@ -1,0 +1,28 @@
+appName: HouseHunter
+
+pages:
+  page_1:
+    type: mieszkania
+    market: rynek_wtorny
+    url: "https://ogloszenia.trojmiasto.pl/nieruchomosci-rynek-wtorny/mieszkanie/ikl,101.html?strona="
+    filename: "mieszkania_rynek_wtorny.txt"
+  page_2:
+    type: mieszkania
+    market: rynek_pierwotny
+    url: "https://ogloszenia.trojmiasto.pl/nieruchomosci-rynek-pierwotny/mieszkanie/ikl,101.html?strona="
+    filename: "mieszkania_rynek_pierwotny.txt"
+
+
+#trojmiasto.pl
+selectors:
+  page_1:
+    address: ".oglField--address"
+    price: ".oglDetailsMoney"
+    area: "#show-powierzchnia span"
+    floor_no: ".oglField--pietro .oglField__value"
+    no_of_rooms: ".oglField--l_pokoi .oglField__value"
+    no_of_floors_in_building: ".oglField--l_pieter .oglField__value"
+    offer_id: ".oglField--nr_oferty span"
+    description: ".ogl__description"
+    additional_info: ".oglFieldList span"
+    images_links: ".oglGallery img"
