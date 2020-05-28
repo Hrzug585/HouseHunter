@@ -1,11 +1,18 @@
 import bs4 as bs
 import urllib.request
+from urllib.error import HTTPError
 import time
 
 
 def read_page(link, filename):
     f = open(filename, "a")
-    source = urllib.request.urlopen(link).read()
+    try:
+        source = urllib.request.urlopen(link).read()
+    except HTTPError as e:
+        if e.code == 429:
+            time.sleep(5)
+            source = urllib.request.urlopen(link).read()
+
     soup = bs.BeautifulSoup(source, 'lxml')
 
     urls = soup.select('.list__item__picture a')
@@ -21,5 +28,4 @@ def read_page(link, filename):
             is_last = 0
 
     f.close()
-    time.sleep(1)
     return bool(is_last)
