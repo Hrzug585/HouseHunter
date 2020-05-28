@@ -7,3 +7,6 @@
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/vcs.xml
 /scraper/.idea/__pycache__
+/api/.gradle/
+/api/.idea/
+/api/build/
