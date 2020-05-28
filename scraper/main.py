@@ -1,5 +1,3 @@
-import sys, os
-sys.path.append(r'C:\Users\MHM\Documents\HouseHunter')
 from scraper import get_links
 import confuse
 from urllib.error import HTTPError
