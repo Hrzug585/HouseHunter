@@ -20,9 +20,10 @@ def main():
     is_page_last = 0
     while not bool(is_page_last):
         is_page_last = get_links.read_page(url + str(counter), filename)
+        #log here next 20 pages donwloaded?
         print(str(counter) + "\n")
         counter += 1
-        #time.sleep(1)
+        time.sleep(1)
 
 
 if __name__ == '__main__':

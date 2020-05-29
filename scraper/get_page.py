@@ -43,4 +43,4 @@ class Page:
 
 
 def get_json(self):
-    return json.dumps(self, ensure_ascii=False, indent=2, default=lambda x: x.__dict__)
+    return json.dumps(self, ensure_ascii=False, default=lambda x: x.__dict__)

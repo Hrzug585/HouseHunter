@@ -17,7 +17,7 @@ public class HomeService {
     }
 
     public void save(Home home){
-        indexQueryBuilder.withId(home.getId().toString()).withObject(home).build();
+        indexQueryBuilder.withObject(home).build();
         elasticsearchOperations.save(home);
     }
 
